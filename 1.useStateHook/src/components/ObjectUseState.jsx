@@ -13,7 +13,7 @@ const ObjectUseState = () => {
 
   return (
     <div>
-      <div className=" border-2 p-5">
+      <div className=" border-2 p-5 mt-3">
         <h1 className="text-xl font-semibold">
           Product Name: {product.name} || Product Quantity: {product.quantity}
         </h1>

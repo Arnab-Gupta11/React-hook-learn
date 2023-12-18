@@ -9,7 +9,7 @@ function App() {
     <>
       <div className="w-2/3 min-h-screen flex justify-center items-center mx-auto">
         <div>
-          <div className="flex gap-3">
+          <div className="flex items-center gap-3">
             <Count></Count>
             <Toggle></Toggle>
           </div>
