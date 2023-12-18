@@ -3,12 +3,19 @@ import { useEffect, useState } from "react";
 const UseEffect1 = () => {
   const [count, setCount] = useState(0);
   useEffect(() => {
+    console.log("I am First useEffect");
     if (count >= 1) {
       document.title = `chat(${count})`;
     } else {
       document.title = `chat`;
     }
-  });
+  }, [count]); //this useEffect will run whenever count state is changed
+  useEffect(() => {
+    console.log("I am Second useEffect");
+  }, []); //this useEffect will run first time render componenet
+  useEffect(() => {
+    console.log("No dependency array");
+  }); //If we do not use dependency array then it will run for every rendering
   console.log("Outside useEffect");
 
   const counting = () => {
