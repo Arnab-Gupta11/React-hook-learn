@@ -1,4 +1,5 @@
 import "./App.css";
+import Timer from "./components/Timer";
 import UseEffect1 from "./components/UseEffect1";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
         <div>
           <h1 className="text-red-400">Vite + React</h1>
           <UseEffect1 />
+          <Timer />
         </div>
       </div>
     </>
