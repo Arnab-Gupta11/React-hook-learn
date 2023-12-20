@@ -1,5 +1,6 @@
 import "./App.css";
 import IncDec from "./components/IncDec";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <div>
           <h1 className="text-red-400">Vite + React</h1>
           <IncDec />
+          <TodoList />
         </div>
       </div>
     </>
